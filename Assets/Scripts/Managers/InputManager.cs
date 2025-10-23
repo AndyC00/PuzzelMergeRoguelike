@@ -30,40 +30,51 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        // --- Mouse ---
+        var mouse = Mouse.current;
+        if (mouse != null)
         {
-            Cursor.SetCursor(pressedMouseIcon, hotSpot, mode);
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            Cursor.SetCursor(defaultMouseIcon, hotSpot, mode);
-        }
-
-        // Esc key to quit menus and game
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (ConversationSystem.Instance.gameObject.activeSelf)
+            if (mouse.leftButton.wasPressedThisFrame)
             {
-                ConversationSystem.Instance.Hide();
+                Cursor.SetCursor(pressedMouseIcon, hotSpot, mode);
             }
-            else if (ExitUI.instance.gameObject.activeSelf)
+            if (mouse.leftButton.wasReleasedThisFrame)
             {
-                ExitUI.instance.Hide();
-            }
-            else
-            { 
-                ExitUI.instance.Show();
+                Cursor.SetCursor(defaultMouseIcon, hotSpot, mode);
             }
         }
 
-        if (ConversationSystem.Instance.gameObject.activeSelf && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E)))
+        // --- Keyboard ---
+        var kb = Keyboard.current;
+        if (kb != null)
         {
-            ConversationSystem.Instance.OnNextButtonClick();
-        }
+            // Esc key to quit menus and game
+            if (kb.escapeKey.wasPressedThisFrame)
+            {
+                if (ConversationSystem.Instance.gameObject.activeSelf)
+                {
+                    ConversationSystem.Instance.Hide();
+                }
+                else if (ExitUI.instance.gameObject.activeSelf)
+                {
+                    ExitUI.instance.Hide();
+                }
+                else
+                {
+                    ExitUI.instance.Show();
+                }
+            }
 
-        if (Input.GetKeyDown(KeyCode.Q))    // Testing use only
-        {
-            GameManager.instance.ResourceCount += 90;
+            if (ConversationSystem.Instance.gameObject.activeSelf && (kb.numpadEnterKey.wasPressedThisFrame || kb.enterKey.wasPressedThisFrame || kb.eKey.wasPressedThisFrame))
+            {
+                ConversationSystem.Instance.OnNextButtonClick();
+            }
+
+            // for testing only
+            if (kb.qKey.wasPressedThisFrame)
+            {
+                GameManager.instance.ResourceCount += 90;
+            }
         }
     }
 }

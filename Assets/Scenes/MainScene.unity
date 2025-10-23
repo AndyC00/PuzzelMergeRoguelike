@@ -2513,13 +2513,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 484975920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9249c9ea15e9af749875c727494e7306, type: 3}
+  m_Script: {fileID: 11500000, guid: 065c9f885fdee134cbcf9de30f54de71, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationSystem
   nameText: {fileID: 1650894743}
   conversationText: {fileID: 1085338706}
   nextButton: {fileID: 352980770}
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 579005706}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,12 +3676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93eb3f178e8c533438a89a7ead95f05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 3734695990435204967, guid: aee6d66136852874bbfd4e74095ffc2f, type: 3}
-  cardPanel: {fileID: 0}
-  cardFaceLibrary: {fileID: 11400000, guid: 00ce508859a1abb4c8c74aaf14e2b6a8, type: 2}
-  pairCount: 9
-  inputLocked: 0
-  timeLimit: 90
 --- !u!114 &707538106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5438,23 +5432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstStageConversation:
-  - "Sometimes I feel like some of these zombies aren\u2019t totally mindless."
-  - "The way a few of them look at me, it\u2019s unsettling."
-  firstStageShort:
-  - Watch out.
-  secondStageConversation:
-  - "Lately, there\u2019s been a strange zombie around here."
-  - "It\u2019s like it\u2019s testing our defenses."
-  - Are these things really just zombies?
-  secondStageShort:
-  - Wired...
-  thirdStageConversation:
-  - "That special zombie is gone, but I have a feeling we\u2019ll run into it again
-    someday."
-  - "Maybe this world is even stranger than we imagined\u2026"
-  thirdStageShort:
-  - Take care mate.
 --- !u!114 &970772305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5467,12 +5444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Soldier
-  CharacterImage: {fileID: -7854774435166293564, guid: 9460648377bf5714a8c9b061f0b381ee, type: 3}
-  conversationContent:
-  - Here to gather wood?
-  - "Move quickly\u2014zombies could show up any minute."
-  hasTalked: 0
 --- !u!61 &970772306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6580,14 +6551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Chef
-  CharacterImage: {fileID: -6707068268653951271, guid: 110b685d4e99c61478c13bbc8d45b040, type: 3}
-  conversationContent:
-  - Welcome to our camp, we really short of hands.
-  - Food is running low. I can only make simple soup these days.
-  - If you bring back more wood, maybe I can cook something better for everyone.
-  - Can you help us collect 80 woods?
-  hasTalked: 0
 --- !u!114 &1229550150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6600,24 +6563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstStageConversation:
-  - Thanks to you, the meals have improved.
-  - "Even though supplies are still tight, some hot food lifts everyone\u2019s spirits."
-  - Can you collect 170 woods for the camp?
-  firstStageShort:
-  - Thank you. 170 woods will be enough for now
-  secondStageConversation:
-  - "Life is steadier now, but I\u2019m hearing people are starting to get sick."
-  - "Be careful\u2014don\u2019t bring the virus back."
-  - We need more wood, can you collect 300 woods?
-  secondStageShort:
-  - Take care. Please bring 300 woods back.
-  thirdStageConversation:
-  - Maybe, just maybe, we can rebuild.
-  - "I\u2019ve found some seeds."
-  - If we can grow our own food, things might really get better.
-  thirdStageShort:
-  - Take care.
 --- !u!114 &1229550151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6834,21 +6779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstStageConversation:
-  - "I\u2019ve heard rumors of a bigger camp up north."
-  - "If it\u2019s true, maybe we still have a chance."
-  firstStageShort:
-  - What do you think?
-  secondStageConversation:
-  - "I\u2019m starting to doubt those stories about the northern camp."
-  - "Maybe it\u2019s just wishful thinking."
-  secondStageShort:
-  - ...
-  thirdStageConversation:
-  - "The northern camp did exist, but it\u2019s already fallen."
-  - Maybe the real hope is right here with us.
-  thirdStageShort:
-  - Let's prepare for it!
 --- !u!114 &1323148139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6861,12 +6791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Survivor
-  CharacterImage: {fileID: 3806047215930970066, guid: 81b5d403e135d6746b756fee78952f57, type: 3}
-  conversationContent:
-  - I heard there are zombies everywhere outside.
-  - "Be careful when you go out, don\u2019t take unnecessary risks."
-  hasTalked: 0
 --- !u!61 &1323148140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7415,22 +7339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstStageConversation:
-  - People seem to be in better shape.
-  - "Maybe\u2026 maybe life can go on after all."
-  firstStageShort:
-  - What do we have for tomorrow?
-  - I heard the chef needs some help for woods.
-  secondStageConversation:
-  - Some of us who went out never came back.
-  - "Sometimes I wonder if there\u2019s any hope left outside."
-  secondStageShort:
-  - Tell me, what's outside there?
-  thirdStageConversation:
-  - You made us believe humanity can rise again.
-  - Thank you.
-  thirdStageShort:
-  - Thank you.
 --- !u!114 &1554120683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7443,12 +7351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Survivor
-  CharacterImage: {fileID: -944877225017740875, guid: d601a2557bde60c43a8fc02420a16cfe, type: 3}
-  conversationContent:
-  - Every day just surviving feels hard enough.
-  - "Sometimes I wonder if any of this is even worth it\u2026"
-  hasTalked: 0
 --- !u!61 &1554120684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8095,25 +7997,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstStageConversation:
-  - Your hard work has reassured everyone.
-  - But there are more zombies than before.
-  - We need to fix up the walls.
-  firstStageShort:
-  - Let's fix the wall. Please bring 170 woods back to us.
-  secondStageConversation:
-  - "The walls are stronger now, but we\u2019re facing new problems\u2014supplies
-    are running low."
-  - "We\u2019ll have to find other ways to survive in the long run."
-  secondStageShort:
-  - Bring more woods back!
-  - We almost there!
-  - 300 woods can help the camp built the watch tower.
-  thirdStageConversation:
-  - "We\u2019ve found some clues, those zombies might be evolving."
-  - We need to start preparing for something even bigger.
-  thirdStageShort:
-  - Thank you for what you have done.
 --- !u!114 &1706771804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8126,13 +8009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Guard
-  CharacterImage: {fileID: -1090399176347446507, guid: 63209d1af7dbf6a48b96d61da0b59d3c, type: 3}
-  conversationContent:
-  - "There\u2019s been more zombie activity lately."
-  - "Watch out in those woods, don\u2019t wander too far."
-  - only 80 woods will make the camp runs for a while.
-  hasTalked: 0
 --- !u!61 &1706771805
 BoxCollider2D:
   m_ObjectHideFlags: 0

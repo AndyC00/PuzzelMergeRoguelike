@@ -20,7 +20,7 @@ public class StartPanel : MonoBehaviour
     {
         if (Keyboard.current == null) { Debug.Log("keyboard doesn't applied!"); return; }
 
-        if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame || Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame)
         {
             Hide();
         }
