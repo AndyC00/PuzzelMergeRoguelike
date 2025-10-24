@@ -3589,7 +3589,6 @@ GameObject:
   - component: {fileID: 707538103}
   - component: {fileID: 707538102}
   - component: {fileID: 707538104}
-  - component: {fileID: 707538105}
   - component: {fileID: 707538106}
   m_Layer: 0
   m_Name: GameManager
@@ -3664,18 +3663,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultMouseIcon: {fileID: 2800000, guid: d7c2e5b52aef3834984c792b0d3f2ea0, type: 3}
   pressedMouseIcon: {fileID: 2800000, guid: be23039664c76574fafe664ada13ae33, type: 3}
---- !u!114 &707538105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707538100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93eb3f178e8c533438a89a7ead95f05c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &707538106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5380,9 +5367,9 @@ GameObject:
   - component: {fileID: 970772308}
   - component: {fileID: 970772307}
   - component: {fileID: 970772306}
-  - component: {fileID: 970772305}
-  - component: {fileID: 970772304}
   - component: {fileID: 970772303}
+  - component: {fileID: 970772310}
+  - component: {fileID: 970772309}
   m_Layer: 0
   m_Name: Soldier_Green
   m_TagString: NPC
@@ -5420,30 +5407,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.03
   period: 4
---- !u!114 &970772304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970772301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &970772305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970772301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &970772306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5575,6 +5538,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &970772309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970772301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce56784daf23b91499827ea141c362cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationDatabase
+  firstStageConversation: []
+  firstStageShort: []
+  secondStageConversation: []
+  secondStageShort: []
+  thirdStageConversation: []
+  thirdStageShort: []
+--- !u!114 &970772310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970772301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06500bf8aba7cbb41a54b002dac6a2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  npcName: 
+  CharacterImage: {fileID: 0}
+  conversationContent: []
+  hasTalked: 0
 --- !u!1 &1029338881
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,9 +6379,9 @@ GameObject:
   - component: {fileID: 1229550147}
   - component: {fileID: 1229550146}
   - component: {fileID: 1229550145}
-  - component: {fileID: 1229550149}
-  - component: {fileID: 1229550150}
   - component: {fileID: 1229550151}
+  - component: {fileID: 1229550153}
+  - component: {fileID: 1229550152}
   m_Layer: 0
   m_Name: Chef
   m_TagString: NPC
@@ -6539,30 +6536,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1229550149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229550142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1229550150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229550142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1229550151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6577,6 +6550,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.03
   period: 4
+--- !u!114 &1229550152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229550142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce56784daf23b91499827ea141c362cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationDatabase
+  firstStageConversation: []
+  firstStageShort: []
+  secondStageConversation: []
+  secondStageShort: []
+  thirdStageConversation: []
+  thirdStageShort: []
+--- !u!114 &1229550153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229550142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06500bf8aba7cbb41a54b002dac6a2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  npcName: 
+  CharacterImage: {fileID: 0}
+  conversationContent: []
+  hasTalked: 0
 --- !u!1 &1310087118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,9 +6734,9 @@ GameObject:
   - component: {fileID: 1323148142}
   - component: {fileID: 1323148141}
   - component: {fileID: 1323148140}
-  - component: {fileID: 1323148139}
-  - component: {fileID: 1323148138}
   - component: {fileID: 1323148137}
+  - component: {fileID: 1323148144}
+  - component: {fileID: 1323148143}
   m_Layer: 0
   m_Name: Suvivor2
   m_TagString: NPC
@@ -6767,30 +6774,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.03
   period: 4
---- !u!114 &1323148138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323148135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1323148139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323148135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1323148140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6922,6 +6905,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1323148143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323148135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce56784daf23b91499827ea141c362cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationDatabase
+  firstStageConversation: []
+  firstStageShort: []
+  secondStageConversation: []
+  secondStageShort: []
+  thirdStageConversation: []
+  thirdStageShort: []
+--- !u!114 &1323148144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323148135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06500bf8aba7cbb41a54b002dac6a2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  npcName: 
+  CharacterImage: {fileID: 0}
+  conversationContent: []
+  hasTalked: 0
 --- !u!1 &1339064537
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,9 +7304,9 @@ GameObject:
   - component: {fileID: 1554120686}
   - component: {fileID: 1554120685}
   - component: {fileID: 1554120684}
-  - component: {fileID: 1554120683}
-  - component: {fileID: 1554120682}
   - component: {fileID: 1554120681}
+  - component: {fileID: 1554120688}
+  - component: {fileID: 1554120687}
   m_Layer: 0
   m_Name: Suvivor
   m_TagString: NPC
@@ -7327,30 +7344,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.03
   period: 4
---- !u!114 &1554120682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554120679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1554120683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554120679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1554120684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7482,6 +7475,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1554120687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554120679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce56784daf23b91499827ea141c362cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationDatabase
+  firstStageConversation: []
+  firstStageShort: []
+  secondStageConversation: []
+  secondStageShort: []
+  thirdStageConversation: []
+  thirdStageShort: []
+--- !u!114 &1554120688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554120679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06500bf8aba7cbb41a54b002dac6a2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  npcName: 
+  CharacterImage: {fileID: 0}
+  conversationContent: []
+  hasTalked: 0
 --- !u!1 &1650894741
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,9 +7972,9 @@ GameObject:
   - component: {fileID: 1706771807}
   - component: {fileID: 1706771806}
   - component: {fileID: 1706771805}
-  - component: {fileID: 1706771804}
-  - component: {fileID: 1706771803}
   - component: {fileID: 1706771802}
+  - component: {fileID: 1706771809}
+  - component: {fileID: 1706771808}
   m_Layer: 0
   m_Name: Soldier_Grey
   m_TagString: NPC
@@ -7985,30 +8012,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.03
   period: 4
---- !u!114 &1706771803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706771800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcb7e3478e0a8048bf7658d60c8c8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1706771804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706771800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2afa2f5ab93cdc4b938bc74d0008ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1706771805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8140,6 +8143,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1706771808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706771800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce56784daf23b91499827ea141c362cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationDatabase
+  firstStageConversation: []
+  firstStageShort: []
+  secondStageConversation: []
+  secondStageShort: []
+  thirdStageConversation: []
+  thirdStageShort: []
+--- !u!114 &1706771809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706771800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06500bf8aba7cbb41a54b002dac6a2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  npcName: 
+  CharacterImage: {fileID: 0}
+  conversationContent: []
+  hasTalked: 0
 --- !u!1 &1721713018
 GameObject:
   m_ObjectHideFlags: 0

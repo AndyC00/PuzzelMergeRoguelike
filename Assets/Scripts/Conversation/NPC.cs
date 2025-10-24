@@ -1,6 +1,5 @@
 using UnityEngine;
-using static ConversationSystem;
-using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class NPC : MonoBehaviour
 {
@@ -22,7 +21,7 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
-        if (isInteracting && Input.GetKeyDown(KeyCode.E))
+        if (isInteracting && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
         {
             LoadConversation();
             hasTalked = true;
